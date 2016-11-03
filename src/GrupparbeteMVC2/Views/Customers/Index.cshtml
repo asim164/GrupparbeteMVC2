@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using GrupparbeteMVC2.Models
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> List of Customers</title>
+</head>
+<body>
+    
+        @foreach (Customer item in ViewBag.Customers)
+        {
+            @($"{ item.Id} {item.CompanyName} {item.Adress} {item.EmployeeCount}")
+            <br />
+        }
+
+</body>
+</html>
